@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Crece en Redes Sociales y YouTube — Guía práctica</title>
+  <meta name="description" content="Consejos prácticos, plan de contenidos y recursos para crecer en redes sociales y YouTube." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-100 min-h-screen">
+
+<header class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
+  <h1 class="text-2xl font-extrabold text-center sm:text-left">Crece en Redes & YouTube</h1>
+  <nav class="flex flex-wrap justify-center sm:justify-end gap-3 text-sm">
+    <a href="#consejos" class="hover:underline">Consejos</a>
+    <a href="#youtube" class="hover:underline">YouTube</a>
+    <a href="#calendario" class="hover:underline">Calendario</a>
+    <a href="#recursos" class="hover:underline">Recursos</a>
+  </nav>
+</header>
+
+<main class="max-w-4xl mx-auto p-4">
+
+  <!-- Hero -->
+  <section class="grid gap-6 items-center mb-8 sm:grid-cols-2">
+    <div>
+      <h2 class="text-3xl sm:text-4xl font-bold leading-tight">Estrategias prácticas para crecer en redes sociales y en YouTube</h2>
+      <p class="mt-4 text-gray-300 text-sm sm:text-base">Guía condensada con tácticas comprobables, checklist y un calendario de contenidos para que empieces a ver resultados.</p>
+      <div class="mt-4 flex flex-col sm:flex-row gap-2 sm:gap-3">
+        <a href="#calendario" class="px-4 py-2 bg-indigo-600 rounded-lg font-medium shadow text-center">Ver calendario</a>
+        <button onclick="copyChecklist()" class="px-4 py-2 bg-gray-700 rounded-lg text-center">Copiar checklist</button>
+      </div>
+    </div>
+    <div class="glass p-4 sm:p-6 rounded-xl shadow-lg">
+      <h3 class="text-lg sm:text-xl font-semibold">Checklist rápido</h3>
+      <ul id="checklist" class="mt-3 space-y-1 text-gray-200 text-sm">
+        <li>✅ Definir nicho claro (tema + estilo)</li>
+        <li>✅ Crear calendario de 4 semanas</li>
+        <li>✅ Optimizar títulos y miniaturas</li>
+        <li>✅ Publicar con consistencia</li>
+        <li>✅ Analizar métricas semanalmente</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Consejos generales -->
+  <section id="consejos" class="mb-8">
+    <h3 class="text-2xl font-semibold mb-3 text-center sm:text-left">Consejos generales</h3>
+    <div class="grid gap-4 sm:grid-cols-3">
+      <article class="bg-gray-800 p-3 rounded-lg">
+        <h4 class="font-semibold">Nicho y propuesta de valor</h4>
+        <p class="text-sm text-gray-300 mt-1">Enfócate en un tema específico y aclara qué problema resuelves o qué emoción despiertas.</p>
+      </article>
+      <article class="bg-gray-800 p-3 rounded-lg">
+        <h4 class="font-semibold">Consistencia</h4>
+        <p class="text-sm text-gray-300 mt-1">Mejor 2 piezas semanales bien hechas que 7 mediocres. Favorece los algoritmos.</p>
+      </article>
+      <article class="bg-gray-800 p-3 rounded-lg">
+        <h4 class="font-semibold">Calidad sobre cantidad</h4>
+        <p class="text-sm text-gray-300 mt-1">Mejora audio, iluminación y edición. Pequeñas mejoras aumentan retención.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- YouTube específico -->
+  <section id="youtube" class="mb-8">
+    <h3 class="text-2xl font-semibold mb-3 text-center sm:text-left">Estrategias para YouTube</h3>
+    <div class="grid gap-4 sm:grid-cols-2">
+      <div class="bg-gray-800 p-3 rounded-lg">
+        <h4 class="font-semibold">Optimización del video</h4>
+        <ul class="list-disc pl-4 text-sm text-gray-300 space-y-1">
+          <li>Título con keyword + gancho emocional.</li>
+          <li>Miniatura clara y llamativa.</li>
+          <li>Descripción con párrafos y capítulos.</li>
+          <li>Tags y categoría correcta.</li>
+        </ul>
+      </div>
+      <div class="bg-gray-800 p-3 rounded-lg">
+        <h4 class="font-semibold">Retención y estructura</h4>
+        <p class="text-sm text-gray-300 mt-1">Gancho en los primeros segundos, capítulos, llamadas a la acción y mantener curiosidad.</p>
+      </div>
+      <div class="bg-gray-800 p-3 rounded-lg">
+        <h4 class="font-semibold">Frecuencia y mezcla</h4>
+        <p class="text-sm text-gray-300 mt-1">Combina videos largos y shorts. Analiza qué atrae suscriptores.</p>
+      </div>
+      <div class="bg-gray-800 p-3 rounded-lg">
+        <h4 class="font-semibold">Miniaturas A/B</h4>
+        <p class="text-sm text-gray-300 mt-1">Prueba variaciones de miniatura y aprende cuál obtiene más clics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calendario -->
+  <section id="calendario" class="mb-8 overflow-x-auto">
+    <h3 class="text-2xl font-semibold mb-3 text-center sm:text-left">Calendario 4 semanas</h3>
+    <table class="w-full text-sm border border-gray-700">
+      <thead class="bg-gray-800 text-gray-200">
+        <tr>
+          <th class="p-2">Semana</th>
+          <th class="p-2">Lunes</th>
+          <th class="p-2">Miércoles</th>
+          <th class="p-2">Viernes</th>
+          <th class="p-2">Shorts</th>
+        </tr>
+      </thead>
+      <tbody class="text-gray-200">
+        <tr class="border-t border-gray-700">
+          <td class="p-2 font-medium">1</td>
+          <td class="p-2">Idea + guion</td>
+          <td class="p-2">Grabación</td>
+          <td class="p-2">Edición</td>
+          <td class="p-2">Shorts destacados</td>
+        </tr>
+        <tr class="border-t border-gray-700">
+          <td class="p-2 font-medium">2</td>
+          <td class="p-2">Revisar métricas</td>
+          <td class="p-2">Colaboración</td>
+          <td class="p-2">Publicación</td>
+          <td class="p-2">Shorts trends</td>
+        </tr>
+        <tr class="border-t border-gray-700">
+          <td class="p-2 font-medium">3</td>
+          <td class="p-2">Contenido evergreen</td>
+          <td class="p-2">Tutorial</td>
+          <td class="p-2">Live / Q&A</td>
+          <td class="p-2">Highlights</td>
+        </tr>
+        <tr class="border-t border-gray-700">
+          <td class="p-2 font-medium">4</td>
+          <td class="p-2">Batching 2 videos</td>
+          <td class="p-2">SEO</td>
+          <td class="p-2">Publicación + revisión</td>
+          <td class="p-2">Resumen mensual</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer class="bg-gray-900 text-gray-400 p-4 text-center">
+  © 2025 Crece en Redes — Plantilla
+</footer>
+
+<script>
+function copyChecklist(){
+  const text = Array.from(document.querySelectorAll('#checklist li')).map(li => li.textContent).join('\n');
+  navigator.clipboard?.writeText(text).then(()=>{ alert('Checklist copiado al portapapeles'); })
+  .catch(()=>{ prompt('Copia manualmente:', text); });
+}
+</
